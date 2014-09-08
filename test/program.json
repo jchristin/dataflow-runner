@@ -1,0 +1,18 @@
+{
+	"bricks": [{
+		"type": "dataflow-bricks/lib/adder",
+		"props": {
+			"right_value": 77
+		}
+	}, {
+		"type": "dataflow-bricks/lib/logger"
+	}],
+	"links": [
+		[0, "sum", 1, "log"]
+	],
+	"inputs": {
+		"start": [
+			[0, "set_left"]
+		]
+	}
+}

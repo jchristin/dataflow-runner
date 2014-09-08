@@ -5,10 +5,11 @@
 var request = require("supertest"),
 	server = require("../lib/server.js");
 
-describe("GET /api/run", function () {
+describe("GET /bricks", function () {
 	it("should respond", function (done) {
 		request(server)
-			.get("/api/run")
+			.get("/bricks")
+			.expect([])
 			.expect(200, done);
 	});
 });

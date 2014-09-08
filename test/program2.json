@@ -1,0 +1,15 @@
+{
+	"bricks": [{
+		"type": "dataflow-bricks/lib/timer"
+	}, {
+		"type": "dataflow-bricks/lib/logger"
+	}],
+	"links": [
+		[0, "tick", 1, "log"]
+	],
+	"inputs": {
+		"start": [
+			[0, "start"]
+		]
+	}
+}
